@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextech Store - PCs Gamer, Hardware e Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="#inicio" class="logo">Nex<span>tech</span></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="cart-btn" id="open-cart" aria-label="Abrir carrinho">
+            Carrinho (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <!-- Início / Banner Principal -->
+    <section class="hero" id="inicio">
+        <h1>Alta Performance para Seu Setup</h1>
+        <p>PCs gamer prontos e montados sob medida, placas de vídeo, periféricos mecânicos e eletrônicos com pagamento via PIX, cartão ou boleto.</p>
+        <a href="#catalogo" class="btn">Ver Catálogo</a>
+    </section>
+
+    <!-- Sobre -->
+    <section class="container about-section" id="sobre">
+        <h2 class="section-title">Sobre a NexusTech</h2>
+        <p class="about-lead">
+            Somos especialistas em montagem de computadores gamer, hardware de alta performance e eletrônicos selecionados para jogos, criação de conteúdo e produtividade.
+        </p>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Testes de Bancada</h3>
+                <p>Cada PC passa por testes de estabilidade e temperatura antes do envio para garantir desempenho desde o primeiro boot.</p>
+            </div>
+            <div class="about-card">
+                <h3>Garantia e Suporte</h3>
+                <p>Componentes com procedência, nota fiscal e suporte técnico dedicado para ajudar na escolha ou upgrade do seu setup.</p>
+            </div>
+            <div class="about-card">
+                <h3>Pagamento Facilitado</h3>
+                <p>Opções via PIX com desconto, cartão de crédito parcelado ou boleto bancário no carrinho.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Produtos -->
+    <main class="container" id="catalogo">
+        <div class="section-header">
+            <h2 class="section-title">Catálogo</h2>
+            <div class="filters" id="filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="pc-gamer">PCs Gamer</button>
+                <button class="filter-btn" data-category="hardware">Hardware</button>
+                <button class="filter-btn" data-category="perifericos">Periféricos</button>
+            </div>
+        </div>
+
+        <div class="games-grid" id="games-grid">
+            <!-- Produto 1 -->
+            <article class="game-card" data-category="pc-gamer">
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80" alt="PC Gamer Vortex X9" class="game-img">
+                <div class="game-info">
+                    <span class="tag">PCs Gamer</span>
+                    <h3>PC Gamer Vortex X9</h3>
+                    <p>Processador 8-core, GPU dedicada de alto desempenho, 32GB DDR5 e SSD NVMe de 1TB.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 7.499,00</span>
+                        <span class="installment">ou 12x de R$ 624,91 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="PC Gamer Vortex X9"
+                            data-tag="PCs Gamer"
+                            data-price="R$ 7.499,00"
+                            data-desc="Equipado com gabinete airflow, refrigeração líquida, 32GB RAM DDR5, SSD NVMe 1TB e fonte 850W 80 Plus Gold. Pronto para jogos em alta resolução e streaming.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="PC Gamer Vortex X9"
+                            data-price="7499.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 2 -->
+            <article class="game-card" data-category="pc-gamer">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=600&q=80" alt="PC Gamer Titan Mini ITX" class="game-img">
+                <div class="game-info">
+                    <span class="tag">PCs Gamer</span>
+                    <h3>PC Gamer Titan Mini ITX</h3>
+                    <p>Gabinete compacto de alto fluxo de ar, 16GB DDR5, SSD NVMe de 1TB e desempenho silencioso.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 5.290,00</span>
+                        <span class="installment">ou 10x de R$ 529,00 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="PC Gamer Titan Mini ITX"
+                            data-tag="PCs Gamer"
+                            data-price="R$ 5.290,00"
+                            data-desc="Ideal para setups enxutos e mesas compactas sem abrir mão da fluidez em jogos competitivos e aplicações multitarefa.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="PC Gamer Titan Mini ITX"
+                            data-price="5290.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 3 -->
+            <article class="game-card" data-category="hardware">
+                <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80" alt="GPU HyperForce 16GB GDDR6X" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Hardware</span>
+                    <h3>GPU HyperForce 16GB GDDR6X</h3>
+                    <p>Ray tracing avançado, upscaling por IA e triplo cooler silencioso para máxima taxa de quadros.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 3.890,00</span>
+                        <span class="installment">ou 10x de R$ 389,00 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="GPU HyperForce 16GB GDDR6X"
+                            data-tag="Hardware"
+                            data-price="R$ 3.890,00"
+                            data-desc="Placa de vídeo com 16GB de memória GDDR6X, suporte a HDMI 2.1 e DisplayPort, backplate metálico e projeto térmico de alta eficiência.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="GPU HyperForce 16GB GDDR6X"
+                            data-price="3890.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 4 -->
+            <article class="game-card" data-category="hardware">
+                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=600&q=80" alt="SSD NVMe Gen4 2TB 7400MB/s" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Hardware</span>
+                    <h3>SSD NVMe Gen4 2TB 7400MB/s</h3>
+                    <p>Leituras ultrarrápidas para carregamentos instantâneos de mapas, projetos e bibliotecas grandes.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 899,00</span>
+                        <span class="installment">ou 8x de R$ 112,37 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="SSD NVMe Gen4 2TB 7400MB/s"
+                            data-tag="Hardware"
+                            data-price="R$ 899,00"
+                            data-desc="Unidade M.2 NVMe PCIe 4.0 de 2TB com dissipador térmico integrado e alta durabilidade de escrita para jogos e edição.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="SSD NVMe Gen4 2TB 7400MB/s"
+                            data-price="899.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 5 -->
+            <article class="game-card" data-category="hardware">
+                <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80" alt="Kit Memória DDR5 32GB 6000MHz" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Hardware</span>
+                    <h3>Kit Memória DDR5 32GB 6000MHz</h3>
+                    <p>Dual-channel de 32GB (2x16GB) com baixa latência e suporte a perfis XMP/EXPO.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 749,00</span>
+                        <span class="installment">ou 6x de R$ 124,83 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="Kit Memória DDR5 32GB 6000MHz"
+                            data-tag="Hardware"
+                            data-price="R$ 749,00"
+                            data-desc="Módulos DDR5 de 6000MHz com dissipador de alumínio escovado, estabilidade testada e compatibilidade com placas-mãe atuais.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="Kit Memória DDR5 32GB 6000MHz"
+                            data-price="749.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 6 -->
+            <article class="game-card" data-category="perifericos">
+                <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" alt="Teclado Mecânico Pulse 75%" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Periféricos</span>
+                    <h3>Teclado Mecânico Pulse 75%</h3>
+                    <p>Switches táteis hot-swappable, keycaps PBT double-shot e conexão sem fio de baixa latência.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 449,00</span>
+                        <span class="installment">ou 6x de R$ 74,83 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="Teclado Mecânico Pulse 75%"
+                            data-tag="Periféricos"
+                            data-price="R$ 449,00"
+                            data-desc="Layout compacto 75% com teclas de seta dedicadas, iluminação RGB configurável, bateria de longa duração e cabo USB-C trançado removível.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="Teclado Mecânico Pulse 75%"
+                            data-price="449.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 7 -->
+            <article class="game-card" data-category="perifericos">
+                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80" alt="Monitor Gamer 27 165Hz IPS" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Periféricos</span>
+                    <h3>Monitor Gamer 27" 165Hz IPS</h3>
+                    <p>Tempo de resposta de 1ms, fidelidade de cores vibrante e suporte ajustável em altura e inclinação.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 1.599,00</span>
+                        <span class="installment">ou 10x de R$ 159,90 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="Monitor Gamer 27" 165Hz IPS"
+                            data-tag="Periféricos"
+                            data-price="R$ 1.599,00"
+                            data-desc="Painel IPS de 27 polegadas com taxa de atualização de 165Hz, tecnologia antirreflexo, entradas HDMI e DisplayPort e compatibilidade VESA.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="Monitor Gamer 27" 165Hz IPS"
+                            data-price="1599.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 8 -->
+            <article class="game-card" data-category="perifericos">
+                <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=600&q=80" alt="Headset Wireless Pro Surround" class="game-img">
+                <div class="game-info">
+                    <span class="tag">Periféricos</span>
+                    <h3>Headset Wireless Pro Surround</h3>
+                    <p>Áudio espacial imersivo, microfone com cancelamento de ruído e almofadas em tecido respirável.</p>
+                    <div class="price-box">
+                        <span class="price">R$ 529,00</span>
+                        <span class="installment">ou 6x de R$ 88,16 (10% off no PIX)</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-sm open-modal"
+                            data-title="Headset Wireless Pro Surround"
+                            data-tag="Periféricos"
+                            data-price="R$ 529,00"
+                            data-desc="Conexão sem fio 2.4GHz estável, autonomia prolongada de bateria e controles rápidos de volume e mute direto no fone.">
+                            Detalhes
+                        </button>
+                        <button class="btn btn-sm btn-secondary add-to-cart"
+                            data-name="Headset Wireless Pro Surround"
+                            data-price="529.00">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Contato -->
+    <section class="container contact-section" id="contato">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Fale com a Equipe</h3>
+                <p>Precisa de ajuda para montar um PC sob medida, tirar dúvidas sobre compatibilidade ou acompanhar um pedido?</p>
+                <p><strong>E-mail:</strong> contato@nexustech.example</p>
+                <p><strong>Horário:</strong> Segunda a sexta, das 9h às 18h</p>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <label for="contact-name">Nome</label>
+                <input type="text" id="contact-name" name="name" placeholder="Seu nome" required>
+
+                <label for="contact-email">E-mail</label>
+                <input type="email" id="contact-email" name="email" placeholder="seu@email.com" required>
+
+                <label for="contact-message">Mensagem</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Conte qual PC ou produto você procura..." required></textarea>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal de Detalhes do Produto -->
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+            <span class="tag" id="modal-tag">Categoria</span>
+            <h3 id="modal-title">Nome do Produto</h3>
+            <p class="price modal-price" id="modal-price">R$ 0,00</p>
+            <p id="modal-desc">Descrição completa do produto.</p>
+        </div>
+    </div>
+
+    <!-- Drawer / Carrinho com Opções de Pagamento -->
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <button class="modal-close" id="close-cart" aria-label="Fechar carrinho">×</button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="cart-payment">
+            <p class="payment-label">Forma de pagamento:</p>
+            <div class="payment-options">
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="pix" checked>
+                    <span>PIX (10% de desconto)</span>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="cartao">
+                    <span>Cartão de Crédito (até 10x)</span>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="boleto">
+                    <span>Boleto Bancário</span>
+                </label>
+            </div>
+
+            <div id="installment-box" class="installment-box hidden">
+                <label for="installments-select">Parcelas:</label>
+                <select id="installments-select"></select>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total a pagar:</span>
+                <strong id="cart-total">R$ 0,00</strong>
+            </div>
+            <p class="payment-hint" id="payment-hint">10% de desconto aplicado no PIX.</p>
+            <button class="btn btn-full" id="checkout-btn">Gerar Cobrança / Finalizar</button>
+        </div>
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 NexusTech Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
